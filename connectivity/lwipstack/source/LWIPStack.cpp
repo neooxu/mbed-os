@@ -483,6 +483,7 @@ nsapi_size_or_error_t LWIP::socket_recvfrom_control(nsapi_socket_t handle, Socke
         convert_lwip_addr_to_mbed(&pkt_info->ipi_addr, netbuf_destaddr(buf));
         // retrieve the interface id
         pkt_info->network_interface = default_interface->network_if_from_netif_id(buf->p->if_idx);
+        pkt_info->ipi_ifindex = 1;
     }
 #endif
     u16_t recv = netbuf_copy(buf, data, (u16_t)size);

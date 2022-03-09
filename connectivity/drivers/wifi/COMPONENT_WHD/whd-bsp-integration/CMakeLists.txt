@@ -20,7 +20,7 @@ target_link_libraries(mbed-cy-psoc6-common-network
         mbed-emac
 )
 
-target_compile_definitions(mbed-cy-psoc6-common-network
-    INTERFACE
-        MBED_CONF_cy-psoc6-common-network_PRESENT=1
-)
+# target_compile_definitions(mbed-cy-psoc6-common-network
+#     INTERFACE
+#         MBED_CONF_cy-psoc6-common-network_PRESENT=1
+# )

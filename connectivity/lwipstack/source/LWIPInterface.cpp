@@ -61,7 +61,7 @@ int LWIP::Interface::netif_id_from_network_if(NetworkInterface *userInterface)
             }
         }
     }
-    return 0;
+    return 1;
 }
 
 LWIP::Interface *LWIP::Interface::our_if_from_netif(struct netif *netif)
